@@ -71,3 +71,23 @@ Include the header `x-api-key: secret-token` for `POST`, `PUT`, `DELETE` request
 - **Repositories**: Data access layer (In-memory storage for this demo).
 - **Services**: Business logic and validation.
 - **Controllers**: HTTP request/response handling.
+
+## Project Structure
+
+```
+src/
+├── app.js              # Express app setup
+├── server.js           # Entry point
+├── controllers/        # Request Handlers
+│   └── BookController.js
+├── services/           # Business Logic
+│   └── BookService.js
+├── repositories/       # Data Access
+│   └── BookRepository.js
+├── models/             # Data Models
+│   └── Book.js
+├── routes/             # API Routes
+│   └── bookRoutes.js
+└── middlewares/        # Middlewares (Auth, Error)
+    └── index.js
+```
